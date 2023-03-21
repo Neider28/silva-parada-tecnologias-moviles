@@ -1,11 +1,12 @@
 package com.example.silva_parada;
 
+import android.content.Intent;
+import android.os.Bundle;
+import android.widget.Toast;
+
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
-
-import android.os.Bundle;
-import android.widget.Toast;
 
 import java.util.ArrayList;
 
@@ -18,6 +19,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        setTitle(getString(R.string.txt_lista_productos));
 
         cargarDatos();
 
@@ -27,7 +29,9 @@ public class MainActivity extends AppCompatActivity {
         miAdapter.setOnItemClickListener(new AdaptadorPersonalizado.OnItemClickListener() {
             @Override
             public void OnItemClick(Producto miProducto, int position) {
-                Toast.makeText(MainActivity.this, "Click en el producto " + miProducto.getNombre(), Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(MainActivity.this, DetalleActivity.class);
+                intent.putExtra("producto", miProducto);
+                startActivity(intent);
             }
 
             @Override

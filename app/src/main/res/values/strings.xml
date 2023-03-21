@@ -1,3 +1,6 @@
 <resources>
     <string name="app_name">silva_parada</string>
+    <string name="txt_lista_productos">Lista de Productos</string>
+    <string name="txt_detalle_producto">Detalle Producto</string>
+    <string name="txt_agregar">Agregar producto</string>
 </resources>

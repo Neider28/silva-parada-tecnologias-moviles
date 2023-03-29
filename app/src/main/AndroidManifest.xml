@@ -14,9 +14,12 @@
         android:theme="@style/Theme.Silva_parada"
         tools:targetApi="31">
         <activity
+            android:name=".FormularioActivity"
+            android:exported="false" />
+        <activity
             android:name=".LoginActivity"
             android:exported="false"
-            android:theme="@style/Theme.login"/>
+            android:theme="@style/Theme.login" />
         <activity
             android:name=".DetalleActivity"
             android:exported="false" />

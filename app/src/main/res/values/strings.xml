@@ -11,4 +11,5 @@
     <string name="txt_nombre_producto">Nombre del producto</string>
     <string name="txt_url_producto">URL imagen</string>
     <string name="txt_precio_producto">Precio</string>
+    <string name="txt_inicio">Inicio</string>
 </resources>

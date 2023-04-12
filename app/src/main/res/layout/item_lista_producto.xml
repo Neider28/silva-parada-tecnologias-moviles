@@ -48,7 +48,10 @@
         android:layout_height="40dp"
         android:layout_marginTop="15dp"
         android:layout_marginEnd="30dp"
+        android:background="@drawable/shape_button_2"
         android:text="Eliminar"
+        android:textColor="@color/white"
+        android:textSize="15dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tv_item_nombre" />
 </androidx.constraintlayout.widget.ConstraintLayout>

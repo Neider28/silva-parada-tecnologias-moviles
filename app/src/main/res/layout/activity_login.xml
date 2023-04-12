@@ -43,7 +43,7 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <EditText
-            android:id="@+id/editTextTextEmailAddress2"
+            android:id="@+id/et_correo"
             android:layout_width="220dp"
             android:layout_height="35dp"
             android:layout_marginTop="50dp"
@@ -62,7 +62,7 @@
             app:layout_constraintTop_toBottomOf="@+id/textView" />
 
         <EditText
-            android:id="@+id/editTextNumberPassword"
+            android:id="@+id/et_password"
             android:layout_width="220dp"
             android:layout_height="35dp"
             android:layout_marginTop="20dp"
@@ -78,15 +78,16 @@
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/editTextTextEmailAddress2" />
+            app:layout_constraintTop_toBottomOf="@+id/et_correo" />
 
         <Button
-            android:id="@+id/button2"
+            android:id="@+id/btn_iniciar"
             android:layout_width="225dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             android:layout_marginBottom="100dp"
             android:background="@drawable/shape_button"
+            android:onClick="clickIniciarSesion"
             android:text="@string/txt_iniciar"
             android:textColor="@color/naranja"
             android:textSize="15dp"
@@ -94,7 +95,7 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/editTextNumberPassword" />
+            app:layout_constraintTop_toBottomOf="@+id/et_password" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

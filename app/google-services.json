@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "841556112535",
+    "project_id": "android-backend-silva",
+    "storage_bucket": "android-backend-silva.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:841556112535:android:c4b75783a730af155865d2",
+        "android_client_info": {
+          "package_name": "com.example.silva_parada"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "841556112535-ua2j0va10k0hi670d1s6c2spuahe9qio.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDXNqydPXGO758jP69WzXNK1moLf77VlHo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "841556112535-ua2j0va10k0hi670d1s6c2spuahe9qio.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

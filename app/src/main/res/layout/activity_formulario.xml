@@ -20,7 +20,7 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <EditText
-            android:id="@+id/editTextTextPersonName"
+            android:id="@+id/et_nombre_producto"
             android:layout_width="250dp"
             android:layout_height="35dp"
             android:layout_marginTop="50dp"
@@ -38,7 +38,7 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <EditText
-            android:id="@+id/editTextNumberDecimal"
+            android:id="@+id/et_precio_producto"
             android:layout_width="250dp"
             android:layout_height="35dp"
             android:layout_marginTop="20dp"
@@ -53,10 +53,10 @@
             android:textSize="15dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName" />
+            app:layout_constraintTop_toBottomOf="@+id/et_nombre_producto" />
 
         <EditText
-            android:id="@+id/editTextTextPersonName2"
+            android:id="@+id/et_imagen_producto"
             android:layout_width="250dp"
             android:layout_height="35dp"
             android:layout_marginTop="20dp"
@@ -71,14 +71,15 @@
             android:textSize="15dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/editTextNumberDecimal" />
+            app:layout_constraintTop_toBottomOf="@+id/et_precio_producto" />
 
         <Button
-            android:id="@+id/button3"
+            android:id="@+id/btn_registrar"
             android:layout_width="250dp"
             android:layout_height="wrap_content"
             android:layout_marginBottom="50dp"
             android:background="@drawable/shape_button_2"
+            android:onClick="guardarClick"
             android:text="@string/txt_registrar"
             android:textColor="@color/white"
             android:textSize="15dp"

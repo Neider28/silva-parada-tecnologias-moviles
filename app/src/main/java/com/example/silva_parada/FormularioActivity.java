@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.Toast;
 
 import com.google.firebase.firestore.FirebaseFirestore;
 
@@ -27,8 +28,15 @@ public class FormularioActivity extends AppCompatActivity {
         String imagen = etImagen.getText().toString();
         Double precio = Double.parseDouble(etPrecio.getText().toString());
 
-        Producto newProducto = new Producto(nombre, precio, imagen);
+        Producto newProducto = new Producto();
+        newProducto.setNombre(nombre);
+        newProducto.setPrecio(precio);
+        newProducto.setUrlImage(imagen);
 
         FirebaseFirestore firestore = FirebaseFirestore.getInstance();
+        firestore.collection("productos").add(newProducto);
+
+        Toast.makeText(this, "Producto creado", Toast.LENGTH_SHORT).show();
+        finish();
     }
 }

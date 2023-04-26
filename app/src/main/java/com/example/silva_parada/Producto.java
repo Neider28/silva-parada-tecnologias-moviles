@@ -3,15 +3,25 @@ package com.example.silva_parada;
 import java.io.Serializable;
 
 public class Producto implements Serializable {
+    private String id;
     private String nombre;
     private Double precio;
     private String urlImage;
+
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
+    }
 
     public Producto() {
 
     }
 
-    public Producto(String nombre, Double precio, String urlImage) {
+    public Producto(String id, String nombre, Double precio, String urlImage) {
+        this.id = id;
         this.nombre = nombre;
         this.precio = precio;
         this.urlImage = urlImage;
